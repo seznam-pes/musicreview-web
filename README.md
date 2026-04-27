@@ -2,7 +2,7 @@
 ## 🖌️ Téma: recenze hudebních alb (něco jak [Indian](https://indian-tv.cz/) ale s hudbou)
 ## 📄 Podmínky:
 * min. 10 podstránek
-*	Použít všechny tagy z učebnice publi… bruh
+*	Použít všechny tagy z učebnice publi
 ## 🗺️ Mapa stránky:
 **Hlavní stránka (Homepage)** \
 ∟ O stránce *(systém hodnocení alb)* + kontakt *(e-mail)* \
