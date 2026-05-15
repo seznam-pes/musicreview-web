@@ -171,8 +171,7 @@ main {
 .star:nth-child(5) { animation-delay: 0.4s; }
 
 table {
-    border-color: #F9F4F5;
-    border: 1px solid #F9F4F5;
+    border: 1px solid #f9f4f5;
     margin: 50px;
     width: 1200px;
 }
