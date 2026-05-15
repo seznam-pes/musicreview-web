@@ -1,0 +1,14 @@
+main {
+    color: #10011a;
+    gap: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  main h2 {
+    font-size: 40px;
+  }
+  
+  .subimg {
+    background-color: #cacccd;
+  }
