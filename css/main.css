@@ -21,6 +21,7 @@ body {
     background-size: 100%;
     background-attachment: fixed;
     inset: 0;
+    padding: 20px;
 }
 
 .frosted {
