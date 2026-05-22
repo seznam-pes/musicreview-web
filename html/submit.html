@@ -18,10 +18,13 @@
                 <h2><a href="other.html">Ostatní články</a></h2>
                 <button><a href="submit.html">NAVRHNOUT ALBUM</a></button>
             </header>
-            <div class="container">
-                <main>
-                    <form>
-
+            <div class="container" style="justify-content: center; align-items: center; display: flex;">
+                <main style="justify-content: center; align-items: center; display: flex;">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="cb9949ff-b4fb-4c6a-aa0b-3c0d5ff3577d">
+                        <label for="mail">Váš e-mail (pro kontaktování, zdali Vámi navrhnuté album ohodnotím)</label><input type="email" name="mail">
+                        <label for="album">Jaké album bych podle Vás měl zhodnotit?</label><input type="text" required="required" name="album">
+                        <input type="submit" style="align-items: center;">
                     </form>
                 </main>
             </div>
