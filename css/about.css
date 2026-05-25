@@ -7,3 +7,11 @@ main
     border-radius: 15px;
     margin: 20px;
 }
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 50px;
+}
