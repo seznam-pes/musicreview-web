@@ -259,6 +259,124 @@ th,tr,td {
     transition: transform 0.2s ease;
   }
 
+    .carousel {
+        background-color: #fff5e9;
+        color: #10011a;
+        width: min(960px, 100% - 40px);
+        margin: 20px auto;
+        border-radius: 22px;
+        padding: 24px 16px 16px;
+        display: grid;
+        grid-template-columns: 56px 1fr 56px;
+        gap: 14px;
+        align-items: center;
+        box-shadow: 0 16px 32px rgba(16, 1, 26, 0.15);
+    }
+
+    .carousel-track-container {
+        overflow: hidden;
+        border-radius: 16px;
+        min-height: 420px;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.45s ease;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .carousel-slide img {
+        width: min(720px, 100%);
+        height: 360px;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 10px 20px rgba(16, 1, 26, 0.15);
+    }
+
+    .carousel-slide h3 {
+        margin: 4px 0 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .carousel-btn {
+        border: none;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #ecc6e3;
+        color: #10011a;
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .carousel-btn:hover {
+        transform: scale(1.06);
+        background: #e8b9dc;
+    }
+
+    .carousel-btn:focus-visible {
+        outline: 3px solid #10011a;
+        outline-offset: 2px;
+    }
+
+    .carousel-dots {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding-top: 8px;
+    }
+
+    .carousel-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #10011a;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .carousel-dot.is-active {
+        background-color: #10011a;
+    }
+
+    @media (max-width: 900px) {
+        .carousel {
+            grid-template-columns: 44px 1fr 44px;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 14px 8px 12px;
+        }
+
+        .carousel-track-container {
+            min-height: 300px;
+        }
+
+        .carousel-slide img {
+            height: 240px;
+        }
+
+        .carousel-btn {
+            width: 44px;
+            height: 44px;
+            font-size: 1.5rem;
+        }
+    }
+
   input[type=submit]:hover {
     font-weight: 700;
     transform: scale(1.05);
