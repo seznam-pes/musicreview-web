@@ -1,0 +1,8 @@
+main
+{
+    background-color: antiquewhite;
+    color:#10011a;
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+}
