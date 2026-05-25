@@ -2,11 +2,15 @@
     "use strict";
 
     const images = [
-        { src: "../img/album1.jpg", alt: "Album 1" },
-        { src: "../img/album2.jpg", alt: "Album 2" },
-        { src: "../img/album3.jpg", alt: "Album 3" },
-        { src: "../img/album4.jpg", alt: "Album 4" },
-        { src: "../img/album5.jpg", alt: "Album 5" },
+        { src: "../img/24.jpg", alt: "Album 1" },
+        { src: "../img/barvy.jpg", alt: "Album 2" },
+        { src: "../img/buldozer.jpg", alt: "Album 3" },
+        { src: "../img/bully.jpg", alt: "Album 4" },
+        { src: "../img/mbdtf.jpg", alt: "Album 5" },
+        { src: "../img/mnkpd.jpg", alt: "Album 6" },
+        { src: "../img/ondd.jpg", alt: "Album 7" },
+        { src: "../img/roomservice.jpg", alt: "Album 8" },
+        { src: "../img/samo.jpg", alt: "Album 9" },
     ];
 
     let current = 0;
