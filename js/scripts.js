@@ -4,38 +4,34 @@ document.addEventListener("DOMContentLoaded", () => {
 		return;
 	}
 
-	const track = carousel.querySelector(".carousel-track");
 	const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
 	const prevButton = carousel.querySelector(".carousel-btn.prev");
 	const nextButton = carousel.querySelector(".carousel-btn.next");
-	const dotsContainer = carousel.querySelector(".carousel-dots");
 
-	if (!track || slides.length === 0 || !prevButton || !nextButton || !dotsContainer) {
+	if (slides.length < 3 || !prevButton || !nextButton) {
 		return;
 	}
 
 	let currentIndex = 0;
 	let autoplayTimer;
 
-	const dots = slides.map((_, index) => {
-		const dot = document.createElement("button");
-		dot.type = "button";
-		dot.className = "carousel-dot";
-		dot.setAttribute("aria-label", `Přejít na snímek ${index + 1}`);
-		dotsContainer.appendChild(dot);
-		return dot;
-	});
-
 	const updateCarousel = (index) => {
 		currentIndex = (index + slides.length) % slides.length;
-		track.style.transform = `translateX(-${currentIndex * 100}%)`;
+		const leftIndex = (currentIndex - 1 + slides.length) % slides.length;
+		const rightIndex = (currentIndex + 1) % slides.length;
 
 		slides.forEach((slide, i) => {
-			slide.classList.toggle("is-active", i === currentIndex);
-		});
+			slide.classList.remove("left", "center", "right", "hidden", "is-active");
 
-		dots.forEach((dot, i) => {
-			dot.classList.toggle("is-active", i === currentIndex);
+			if (i === currentIndex) {
+				slide.classList.add("center", "is-active");
+			} else if (i === leftIndex) {
+				slide.classList.add("left");
+			} else if (i === rightIndex) {
+				slide.classList.add("right");
+			} else {
+				slide.classList.add("hidden");
+			}
 		});
 	};
 
@@ -54,13 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	nextButton.addEventListener("click", () => {
 		updateCarousel(currentIndex + 1);
 		restartAutoplay();
-	});
-
-	dots.forEach((dot, i) => {
-		dot.addEventListener("click", () => {
-			updateCarousel(i);
-			restartAutoplay();
-		});
 	});
 
 	carousel.addEventListener("mouseenter", () => clearInterval(autoplayTimer));

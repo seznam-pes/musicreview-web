@@ -1,0 +1,129 @@
+main {
+    background: transparent;
+    color: #10011a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.carousel {
+    width: min(980px, 100%);
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 72px 1fr 72px;
+    gap: 16px;
+    align-items: center;
+}
+
+.carousel-stage {
+    position: relative;
+    height: min(74vw, 560px);
+    min-height: 360px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(56%, 520px);
+    margin: 0;
+    transform: translate(-50%, -50%) scale(0.58);
+    opacity: 0;
+    transition: transform 0.68s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.55s ease, filter 0.55s ease;
+    filter: brightness(0.7) saturate(0.85);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 18px 38px rgba(16, 1, 26, 0.35);
+}
+
+.carousel-slide.center {
+    transform: translate(-50%, -50%) scale(1) rotateY(0deg) translateZ(0);
+    opacity: 1;
+    filter: brightness(1) saturate(1);
+    z-index: 3;
+}
+
+.carousel-slide.left {
+    transform: translate(-110%, -48%) scale(0.78) rotateY(24deg) translateZ(-120px);
+    opacity: 0.9;
+    filter: brightness(0.72) saturate(0.9);
+    z-index: 2;
+}
+
+.carousel-slide.right {
+    transform: translate(10%, -48%) scale(0.78) rotateY(-24deg) translateZ(-120px);
+    opacity: 0.9;
+    filter: brightness(0.72) saturate(0.9);
+    z-index: 2;
+}
+
+.carousel-slide.hidden {
+    transform: translate(-50%, -50%) scale(0.5) translateZ(-220px);
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-btn {
+    border: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(236, 198, 227, 0.92);
+    color: #10011a;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.08);
+    background: #ecc6e3;
+}
+
+.carousel-btn:focus-visible {
+    outline: 3px solid #10011a;
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .carousel {
+        grid-template-columns: 48px 1fr 48px;
+        gap: 8px;
+        min-height: 430px;
+    }
+
+    .carousel-stage {
+        height: min(82vw, 460px);
+        min-height: 300px;
+    }
+
+    .carousel-slide {
+        width: min(64%, 380px);
+    }
+
+    .carousel-slide.left {
+        transform: translate(-98%, -48%) scale(0.7) rotateY(20deg) translateZ(-100px);
+    }
+
+    .carousel-slide.right {
+        transform: translate(-2%, -48%) scale(0.7) rotateY(-20deg) translateZ(-100px);
+    }
+
+    .carousel-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+}
