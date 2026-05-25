@@ -1,9 +1,17 @@
+.container > main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0;
     position: relative;
+    width: min(1100px, 100%);
+    margin: auto;
 }
 
 .carousel-outer {
