@@ -21,16 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
 		const rightIndex = (currentIndex + 1) % slides.length;
 
 		slides.forEach((slide, i) => {
-			slide.classList.remove("left", "center", "right", "hidden", "is-active");
+			slide.classList.remove("carousel-slide--prev", "carousel-slide--active", "carousel-slide--next", "carousel-slide--hidden", "is-active");
 
 			if (i === currentIndex) {
-				slide.classList.add("center", "is-active");
+				slide.classList.add("carousel-slide--active", "is-active");
 			} else if (i === leftIndex) {
-				slide.classList.add("left");
+				slide.classList.add("carousel-slide--prev");
 			} else if (i === rightIndex) {
-				slide.classList.add("right");
+				slide.classList.add("carousel-slide--next");
 			} else {
-				slide.classList.add("hidden");
+				slide.classList.add("carousel-slide--hidden");
 			}
 		});
 	};
