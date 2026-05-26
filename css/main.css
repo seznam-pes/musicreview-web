@@ -11,7 +11,7 @@ body {
 
 .img {
     background-image: url("../img/bg.png");
-    background-size: auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
 }
 
 .subimg {
-    background-size: auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
