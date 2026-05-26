@@ -268,6 +268,10 @@ th,tr,td {
   .menu {grid-area: 2 / span 1;}
   .main {grid-area: 2 / span 4;}
   .footer {grid-area: 4 / span 6;}
+
+  img {
+    aspect-ratio: 1;
+  }
 }
 
 @media (min-width: 768px) {
@@ -275,4 +279,8 @@ th,tr,td {
   .menu {grid-area: 2 / span 1;}
   .main {grid-area: 2 / span 4;}
   .footer {grid-area: 3 / span 6;}
+
+    img {
+    aspect-ratio: 1;
+  }
 }
