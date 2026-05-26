@@ -20,6 +20,12 @@ main {
     isolation: isolate;
 }
 
+.carousel-slide.active .carousel-caption {
+    transform: translateZ(0.1px); /* micro-lift vynutí čistý layer */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .carousel-outer {
     display: flex;
     align-items: center;

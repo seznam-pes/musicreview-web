@@ -34,6 +34,8 @@ body {
     border-radius: 16px;
     min-height: 90vh;
     margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header {
