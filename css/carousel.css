@@ -176,3 +176,74 @@ main {
         font-size: 1rem;
     }
 }
+/* Carousel slide — zvětš výšku aby byl prostor pro caption */
+.carousel-slide {
+    height: 400px; /* bylo 340px — přidáno ~60px pro text */
+    overflow: visible; /* caption může být mimo ořez obrázku */
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 320px; /* pevná výška obrázku */
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/* Textový popisek pod obrázkem */
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 2px;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F9F4F5;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.carousel-author {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(249, 244, 245, 0.7);
+    text-align: center;
+}
+
+/* Vedlejší slidy mají průhledný text */
+.carousel-slide.prev .carousel-caption,
+.carousel-slide.next .carousel-caption {
+    opacity: 0.5;
+}
+
+/* Mobil */
+@media (max-width: 700px) {
+    .carousel-slide {
+        height: 300px;
+    }
+
+    .carousel-slide img {
+        height: 230px;
+    }
+
+    .carousel-title {
+        font-size: 0.85rem;
+    }
+
+    .carousel-author {
+        font-size: 0.7rem;
+    }
+}
