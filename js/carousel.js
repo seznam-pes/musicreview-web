@@ -2,15 +2,15 @@
     "use strict";
 
     const images = [
-        { src: "../img/24.jpg",          alt: "Album 1", href: "../html/24.html",          title: "24",           author: "Autor 1" },
-        { src: "../img/barvy.jpg",        alt: "Album 2", href: "../html/barvy.html",        title: "Barvy",        author: "Autor 2" },
-        { src: "../img/buldozer.jpg",     alt: "Album 3", href: "../html/buldozer.html",     title: "Buldozer",     author: "Autor 3" },
-        { src: "../img/bully.jpg",        alt: "Album 4", href: "../html/bully.html",        title: "Bully",        author: "Autor 4" },
-        { src: "../img/mbdtf.jpg",        alt: "Album 5", href: "../html/mbdtf.html",        title: "MBDTF",        author: "Autor 5" },
-        { src: "../img/mnkpd.jpg",        alt: "Album 6", href: "../html/mnkpd.html",        title: "MNKPD",        author: "Autor 6" },
-        { src: "../img/ondd.jpg",         alt: "Album 7", href: "../html/ondd.html",         title: "ONDD",         author: "Autor 7" },
-        { src: "../img/roomservice.jpg",  alt: "Album 8", href: "../html/roomservice.html",  title: "Room Service", author: "Autor 8" },
-        { src: "../img/samo.jpg",         alt: "Album 9", href: "../html/samo.html",         title: "Samo",         author: "Autor 9" },
+        { src: "../img/24.jpg",          alt: "Album 1", href: "../html/24.html",          title: "24",           author: "Loudz1" },
+        { src: "../img/barvy.jpg",        alt: "Album 2", href: "../html/barvy.html",        title: "Barvy",        author: "Viktor Sheen" },
+        { src: "../img/buldozer.jpg",     alt: "Album 3", href: "../html/buldozer.html",     title: "Buldozer",     author: "Separ" },
+        { src: "../img/bully.jpg",        alt: "Album 4", href: "../html/bully.html",        title: "BULLY",        author: "Ye" },
+        { src: "../img/mbdtf.jpg",        alt: "Album 5", href: "../html/mbdtf.html",        title: "My Beautiful Dark Twisted Fantasy",        author: "Kanye West" },
+        { src: "../img/mnkpd.jpg",        alt: "Album 6", href: "../html/mnkpd.html",        title: "Mama Neviem Kedy Pridem Domov",        author: "Samey" },
+        { src: "../img/ondd.jpg",         alt: "Album 7", href: "../html/ondd.html",         title: "Od Nekonečna Do Dávna",         author: "Saul & Hasan" },
+        { src: "../img/roomservice.jpg",  alt: "Album 8", href: "../html/roomservice.html",  title: "Room Service", author: "Hasan & Karlo" },
+        { src: "../img/samo.jpg",         alt: "Album 9", href: "../html/samo.html",         title: "S.A.M.O.",         author: "Saul" },
     ];
 
     let current = 0;
