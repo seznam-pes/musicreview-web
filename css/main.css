@@ -236,7 +236,7 @@ th,tr,td {
     flex-direction: column;
     gap: 30px;
     padding: 20px;
-    background-color: antiquewhite;
+    background-color: #F9F4F5;
     border-radius: 20px;
     align-items: center;
   }
