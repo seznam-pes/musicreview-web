@@ -17,6 +17,7 @@ main {
     position: relative;
     width: 100%;
     margin: 0 auto;
+    isolation: isolate;
 }
 
 .carousel-outer {
