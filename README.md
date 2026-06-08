@@ -14,4 +14,8 @@
 ∟ Album 6 *(Haha Crew – Vlna)* \
 ∟ Album 7 *(Ye – BULLY)* \
 ∟ Album 8 *(Karlo – Hrozba Pre Spoločnosť)* \
-∟ Album 9 *(Loudz1 - 24)*
+∟ Album 9 *(Loudz1 - 24)* \
+∟ Přehled recenzí (carousel) \
+∟ Ostatní články
+
+## 🔗 Odkaz na stránku - [musicreview.vercel.app](https://musicreview.vercel.app)
