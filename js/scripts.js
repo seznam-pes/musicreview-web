@@ -9,7 +9,7 @@ function DarkMode() {
     if (dark === false) {
         dark = true;
         headers[0].style.backgroundColor = "#461a3c";
-        headers[0].style.color = "#EFFEEE";
+        headers[0].style.color = "#effeee";
     }
     else {
         dark = false;
