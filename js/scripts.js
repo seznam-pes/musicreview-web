@@ -5,7 +5,7 @@ function Submited() {
 let dark = false;
 const headers = document.getElementsByTagName("header");
 const links = document.getElementsByTagName("a");
-const cards = document.getElementByClassName("horiz-card");
+const cards = document.getElementsByClassName("horiz-card");
 
 function DarkMode() {
     if (dark === false) {
