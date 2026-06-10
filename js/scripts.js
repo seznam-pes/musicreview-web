@@ -2,13 +2,14 @@ function Submited() {
     alert("Vaše album bylo zasláno a brzy se na něj podívám!");
 }
 
-dark = false;
+let dark = false;
+const headers = document.getElementsByTagName("header");
 
 function DarkMode() {
-    if (dark == false) {
+    if (dark === false) {
         dark = true;
         alert("čus pičus");
-        document.getElementsByTagName("header").style.backgroundColor = "#461a3c";
+        headers[0].style.backgroundColor = "#461a3c";
     }
     else {
         dark = false;
