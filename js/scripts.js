@@ -42,7 +42,7 @@ function DarkMode() {
         }
 
         for (let i = 0; i < buttons.length; i++) {
-            buttons[i].style.backgroundColor = "#effeee";
+            buttons[i].style.backgroundColor = "#a1fcb5";
         }
 
         menu[0].style.backgroundColor = "#f9f4f5";
