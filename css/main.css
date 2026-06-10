@@ -73,6 +73,10 @@ header button.darkmode {
     margin-left: 200px;
 }
 
+.btncontainer {
+    margin-left: auto;
+}
+
 header button a {
     color: #10011a;
     text-decoration: none;
