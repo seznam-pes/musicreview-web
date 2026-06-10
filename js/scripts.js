@@ -10,11 +10,11 @@ function DarkMode() {
     if (dark === false) {
         dark = true;
         headers[0].style.backgroundColor = "#461a3c";
-        links[0].style.color = "#effeee";
+        links.style.color = "#effeee";
     }
     else {
         dark = false;
         headers[0].style.backgroundColor = "#ecc6e3";
-        links[0].style.color = "#10011a";
+        links.style.color = "#10011a";
     }
 }
