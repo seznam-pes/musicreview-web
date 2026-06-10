@@ -8,10 +8,12 @@ const headers = document.getElementsByTagName("header");
 function DarkMode() {
     if (dark === false) {
         dark = true;
-        alert("čus pičus");
         headers[0].style.backgroundColor = "#461a3c";
+        headers[0].style.color = "#EFFEEE";
     }
     else {
         dark = false;
+        headers[0].style.backgroundColor = "#ecc6e3";
+        headers[0].style.color = "#10011a";
     }
 }
