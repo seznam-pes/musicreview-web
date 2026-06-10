@@ -5,12 +5,12 @@ function Submited() {
 dark = false;
 
 function DarkMode() {
-    alert("čus pičus");
     if (dark == false) {
         dark = true;
+        alert("čus pičus");
         document.getElementsByTagName("header").style.backgroundColor = "#461a3c";
     }
     else {
-
+        dark = false;
     }
 }
