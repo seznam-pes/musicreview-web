@@ -10,11 +10,16 @@ function DarkMode() {
     if (dark === false) {
         dark = true;
         headers[0].style.backgroundColor = "#461a3c";
-        links.style.color = "#effeee";
+        for (let i = 0; i < links.length; i++) {
+            links[i].style.color = "#effeee";
+        }
     }
     else {
         dark = false;
         headers[0].style.backgroundColor = "#ecc6e3";
-        links.style.color = "#10011a";
+        for (let i = 0; i < links.length; i++) {
+            links.style.color = "#10011a";
+        }
+        
     }
 }
