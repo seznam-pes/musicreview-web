@@ -10,6 +10,7 @@ const buttons = document.getElementsByTagName("button");
 const menu = document.getElementsByTagName("menu");
 const forms = document.getElementsByTagName("form");
 const labels = document.getElementsByTagName("label");
+const inputs = document.getElementsByTagName("input");
 
 function DarkMode() {
     if (dark === false) {
@@ -42,6 +43,10 @@ function DarkMode() {
             labels[i].style.color = "#f9f4f5";
         }
     }
+
+        if (inputs[0]) {
+            inputs[0].style.backgroundColor = "#092607";
+        }
     }
     else {
         dark = false;
@@ -72,6 +77,10 @@ function DarkMode() {
             for (let i = 0; i < labels.length; i++) {
                 labels[i].style.color = "#10011a";
             }
+        }
+
+        if (inputs[0]) {
+            inputs[0].style.backgroundColor = "#a1fcb5";
         }
     }
 }
