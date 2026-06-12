@@ -9,6 +9,7 @@ const cards = document.getElementsByClassName("horiz-card");
 const buttons = document.getElementsByTagName("button");
 const menu = document.getElementsByTagName("menu");
 const forms = document.getElementsByTagName("form");
+const labels = document.getElementsByTagName("label");
 
 function DarkMode() {
     if (dark === false) {
@@ -34,8 +35,13 @@ function DarkMode() {
 
         if (forms[0]) {
             forms[0].style.backgroundColor = "#461a3c";
-            forms[0].style.color = "#f9f4f5";
         }
+
+        if (labels[0]) {
+        for (let i = 0; i < labels.length; i++) {
+            labels[i].style.color = "#f9f4f5";
+        }
+    }
     }
     else {
         dark = false;
@@ -60,7 +66,12 @@ function DarkMode() {
 
         if (forms[0]) {
             forms[0].style.backgroundColor = "#ecc6e3";
-            forms[0].style.color = "#10011a";
+        }
+
+        if (labels[0]) {
+            for (let i = 0; i < labels.length; i++) {
+                labels[i].style.color = "#10011a";
+            }
         }
     }
 }
