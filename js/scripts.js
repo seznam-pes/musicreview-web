@@ -27,11 +27,15 @@ function DarkMode() {
             buttons[i].style.backgroundColor = "#092607";
         }
 
-        menu[0].style.backgroundColor = "#10011a";
-        menu[0].style.color = "#f9f4f5";
+        if (menu[0]) {
+            menu[0].style.backgroundColor = "#10011a";
+            menu[0].style.color = "#f9f4f5";
+        }
 
-        forms[0].style.backgroundColor = "#461a3c";
-        forms[0].style.color = "#f9f4f5";
+        if (forms[0]) {
+            forms[0].style.backgroundColor = "#461a3c";
+            forms[0].style.color = "#f9f4f5";
+        }
     }
     else {
         dark = false;
@@ -49,10 +53,14 @@ function DarkMode() {
             buttons[i].style.backgroundColor = "#a1fcb5";
         }
 
-        menu[0].style.backgroundColor = "#f9f4f5";
-        menu[0].style.color = "#10011a";
+        if (menu[0]) {
+            menu[0].style.backgroundColor = "#f9f4f5";
+            menu[0].style.color = "#10011a";
+        }
 
-        forms[0].style.backgroundColor = "#ecc6e3";
-        forms[0].style.color = "#10011a";
+        if (forms[0]) {
+            forms[0].style.backgroundColor = "#ecc6e3";
+            forms[0].style.color = "#10011a";
+        }
     }
 }
