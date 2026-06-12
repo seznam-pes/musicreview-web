@@ -46,6 +46,7 @@ function DarkMode() {
 
         if (inputs[3]) {
             inputs[3].style.backgroundColor = "#092607";
+            inputs[3].style.color = "#f9f4f5";
         }
     }
     else {
@@ -81,6 +82,7 @@ function DarkMode() {
 
         if (inputs[3]) {
             inputs[3].style.backgroundColor = "#a1fcb5";
+            inputs[3].style.color = "#10011a";
         }
     }
 }
